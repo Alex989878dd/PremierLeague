@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background:linear-gradient(to right bottom, #a10fa9, #ad1943);
+
+}
+/* Class Header */
+.header {    
+    display: flex;   
+    align-items: center;
+    width: 100%;
+    height: 150px; 
+    background: #ffffff;
+}
+.header__block{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+}
+.header__logo {
+                                 /* bd - border */
+    width: 150px;
+    transform: translateX(20px);
+    border-radius: 0 100px 50px 0;
+}
+
+.header__block-top{
+background-color: #2c072c;
+display: flex;
+justify-content: space-between;
+
+}
+
+.header__list {
+    /* border: 1px solid #ffffff; */
+    display: flex;
+    padding: 20px;
+    font-family: 'Roboto';
+}
+.header__list-item{
+    color: #ffff;  
+    margin: 0 20px;
+}
+.header__list-item a {
+    color: #ffff;
+    font-size: 19px;  
+}
+
+.header__block-right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.material-symbols-outlined{
+    color: rgb(255, 255, 255);
+    padding: 0 10px;   
+}
+.header-button:nth-child(1) {
+    border-left: 1px solid #ffffff; 
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    padding: 0 20px;
+}
+.header-button:nth-child(2){
+    border-right: 1px solid #ffffff;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    padding: 0 20px;
+}
+
+.header-search {
+}
+
+
+.header__img{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    
+}
+
+.header__img-ars img{
+    width: 40px;
+}
+.header__img-che img{
+    width: 35px;
+}
+.header__img-tot img{
+    width: 18px;
+}
+.header__img-liv img{
+    width: 35px;
+}
+.header__img-mci img{
+    width: 35px;
+}
+.header__img-mun img{
+    width: 35px;
+}
+
+
+/* Class Main */
+.main{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1350px; 
+    height: 600px;
+    margin: 0 auto;
+    padding: 0 auto;  
+}
+
+
+.main__left {
+    margin-right: 100px;
+    padding: 10px 20px;
+    background: #ffffff;
+    box-shadow: -2px -5px 10px #6c0d40;
+    width: 290px;
+
+    opacity: 0;
+    transform:translateX(-1000px);
+    transition: 0.5s;
+}
+.main__left h4{
+    color: #880434;
+} 
+
+.main__left.visible{
+    opacity: 1;
+    transform:translateX(0px); 
+}
+
+.main__left-heading{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+.main__left-section{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+
+.left-section__line1{
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+    
+
+}
+.left-section__line2{
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+    
+}
+.left-section__line3{
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+    
+}
+
+.left-section__clubs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section__club{
+    height: 60px;
+    width: 60px;
+    
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+.ars{
+    order: -1;
+}
+
+.mun{
+    order: -1;
+}
+.liv{
+    order: -1;
+    
+}
+
+.left-section__time{
+    padding: 0 10px;
+}
+.left-section__clubs-name{
+    
+    width: 50px;
+    text-align: center;
+}
+
+
+
+
+.main__right{
+    border: 4px solid #993333;
+    color: #ffffff;
+    /* background-color: #400743; */
+    /* background: linear-gradient(to bottom right, rgb(160, 23, 131), rgb(85, 14, 109)); */
+    /* background:linear-gradient(to left, rgb(44, 25, 114), rgb(109, 21, 150) 23%); */
+    
+}
+.main__right-section{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ebrima';
+    
+}
+
+.right-section__vid{
+    border-right: 4px solid #ffffff;
+    border-image: linear-gradient(to bottom, #ff01c4, #6f0b79) 1;
+}
+
+.right-section__info {
+    
+    background: linear-gradient(rgb(57, 3, 64), 60%, rgb(121, 44, 110));
+    padding: 20px;
+}
+.video-section{
+    width: 600px;
+    background-image: url(./img/Без\ названия.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+    transition: 0.5s;
+}
+.video-section:hover{
+    background-size: 200%;
+    width: 500px;
+
+}
+
+.video-section a{
+    background-color: #ffffff;
+    color: #2c072c;
+    font-size: 50px;
+    padding: 13px 20px;
+    border-radius: 50%;
+    transition: 1s;
+}
+.video-section a:hover{
+    transform: scale(1.2);
+    background-color: #2c072c;
+    color: #ffffff;
+}
+
+.info-text:nth-child(3){
+    margin: 20px 0;
+}
+.info-text__item {
+    
+}
+
+.section__icons{
+    font-size: 15px;
+}
+
+.fa-play{
+    font-size: 15px;
+    color: #d12b9c;
+    background: #ffffff;
+    padding: 17px 20px;
+    border-radius: 100% ;
+    margin: 5px 10px;
+    
+}
+.fa-newspaper{
+    font-size: 13px; 
+    border-radius: 100% ;
+    padding: 19px 20px;
+    margin: 5px 10px;
+    color: #d12b9c;
+    background: #ffffff;
+}
+.main__right-block{
+display: flex;
+margin-top: 25px;
+}
+
+.main__right-block-left {
+    width: 500px;
+    border: 1px solid #000;
+    margin-right: 4px;
+}
+
+.main__right-block-right {
+    width: 500px;
+border: 1px solid #000;
+margin-left: 4px;
+}
+.right-block-text {
+margin-left: 20px;
+}
+
+
+
+
+
+.carousel-item{
+    height: 800px;
+
+}
+.carousel__img{
+    width: 300px;
+}
+
+.container{
+    border: 1px solid #000;
+}
+.card{
+   background-color: #993333;
+}
+.card-body{
+    background-color: #ffffff;
+   
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-body-img:hover {
+    transform: scale(1.2);
+}
+.modal-body-img{
+    transition: 0.3s;
+    width: 100px;
+    
+}
+.modal-body-text {
+}
+.modal-title{
+    
+}
